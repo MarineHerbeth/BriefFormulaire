@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire d'inscription</title>
+  </head>
+  <body>
+    <fieldset>
+      <legend>Vos coordonnées</legend>
+      <form action="" method="post">
+        <div>
+          <label for="prenom"> Prénom <b>*</b> </label>
+          <input type="text" name="prenom" id="prenom" required />
+        </div>
+        <div>
+          <label for="nom">Nom <b>*</b> </label>
+          <input type="text" name="nom" id="nom" required />
+        </div>
+        <div>
+          <label for="age"> Age <b>*</b> </label>
+          <input type="number" name="age" id="age" min="1" required />
+        </div>
+
+        <div>
+          <label for="sexe">Sexe <b>*</b></label>
+          <select name="sexe" id="sexe">
+            <option value="" selected disabled>Sexe</option>
+            <option value="femme">Femme</option>
+            <option value="homme">Homme</option>
+            <option value="autre">Autre</option>
+            <option value="nonreponse">Ne souhaite pas répondre</option>
+          </select>
+        </div>
+        <div>
+          <label for="email">Adresse email <b>*</b></label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div>
+          <label for="adresse">Adresse postale <b>*</b></label>
+          <textarea name="adresse" id="adresse" rows="3" required></textarea>
+        </div>
+        <div>
+          <label for="codepostal"> Code postal <b>*</b></label>
+          <input
+            type="text"
+            name="codepostal"
+            id="codepostal"
+            maxlength="5"
+            required
+          />
+        </div>
+        <div>
+          <label for="ville"> Ville <b>*</b> </label>
+          <input type="text" name="ville" id="ville" required />
+        </div>
+        <div>
+          <label for="metier">Métier exercé <b>*</b></label>
+          <select id="metier" name="metier">
+            <option value="" selected disabled>Votre métier</option>
+            <option value="acteurs">Acteur</option>
+            <option value="acteurs_cinema">Acteur de cinéma</option>
+            <option value="analyste">Analyste</option>
+            <option value="analyste_donnees">Analyste de données</option>
+            <option value="artisan">Artisan</option>
+            <option value="artistes">Artiste</option>
+            <option value="auditeur">Auditeur</option>
+            <option value="avocat">Avocat</option>
+            <option value="aviateur">Aviateur</option>
+            <option value="banquier">Banquier</option>
+            <option value="biologiste">Biologiste</option>
+            <option value="boulanger">Boulanger</option>
+            <option value="chef_cuisine">Chef de cuisine</option>
+            <option value="chef_de_partie">Chef de partie</option>
+            <option value="chef_de_projet">Chef de projet</option>
+            <option value="chargé_de_clientele">Chargé de clientèle</option>
+            <option value="chargé_de_communiques">
+              Chargé de communication
+            </option>
+            <option value="chef_d_equipe">Chef d'équipe</option>
+            <option value="coach_de_vie">Coach de vie</option>
+            <option value="commercial">Commercial</option>
+            <option value="commercial_export">Commercial export</option>
+            <option value="commerçant">Commerçant</option>
+            <option value="comptable">Comptable</option>
+            <option value="consultant">Consultant</option>
+            <option value="consultant_en_environnement">
+              Consultant en environnement
+            </option>
+            <option value="consultant_it">Consultant IT</option>
+            <option value="consultant_rh">
+              Consultant en ressources humaines
+            </option>
+            <option value="courtier_assurance">Courtier en assurance</option>
+            <option value="cuisinier">Cuisinier</option>
+            <option value="dentiste">Dentiste</option>
+            <option value="directeur_adjoint">Directeur adjoint</option>
+            <option value="directeur_commercial">Directeur commercial</option>
+            <option value="directeur_creatif">Directeur créatif</option>
+            <option value="directeur_financier">Directeur financier</option>
+            <option value="directeur_communication">
+              Directeur de la communication
+            </option>
+            <option value="directeur_municipal">Directeur municipal</option>
+            <option value="directeur_rh">
+              Directeur des ressources humaines
+            </option>
+            <option value="directeur_technique">Directeur technique</option>
+            <option value="dresseur_chien">Dresseur de chien</option>
+            <option value="diplomate">Diplomate</option>
+            <option value="electricien">Électricien</option>
+            <option value="experts_comptable">Experts-comptables</option>
+            <option value="fermier">Fermier</option>
+            <option value="formateur">Formateur</option>
+            <option value="gerant_entreprise">Gérant d'entreprise</option>
+            <option value="gestionnaire_de_produit">
+              Gestionnaire de produit
+            </option>
+            <option value="gestionnaire_de_projet">
+              Gestionnaire de projet
+            </option>
+            <option value="gestionnaire_de_risques">
+              Gestionnaire de risques
+            </option>
+            <option value="gestionnaire_logistique">
+              Gestionnaire logistique
+            </option>
+            <option value="ingenieur_civil">Ingénieur civil</option>
+            <option value="informaticien">Informaticien</option>
+            <option value="journaliste">Journaliste</option>
+            <option value="journaliste_television">
+              Journaliste de télévision
+            </option>
+            <option value="maçon">Maçon</option>
+            <option value="manutentionnaire">Manutentionnaire</option>
+            <option value="medecin">Médecin</option>
+            <option value="medecin_specialiste">Médecin spécialiste</option>
+            <option value="notaire">Notaire</option>
+            <option value="plombier">Plombier</option>
+            <option value="plombier_chauffagiste">Plombier chauffagiste</option>
+            <option value="photographe">Photographe</option>
+            <option value="pilote_aviation">Pilote d'aviation</option>
+            <option value="programmeur">Programmeur</option>
+            <option value="psychologue">Psychologue</option>
+            <option value="psychologue_du_travail">
+              Psychologue du travail
+            </option>
+            <option value="responsable_commercial">
+              Responsable commercial
+            </option>
+            <option value="responsable_achats">Responsable achats</option>
+            <option value="responsable_marketing">Responsable marketing</option>
+            <option value="responsable_quality">Responsable qualité</option>
+            <option value="responsable_des_operations">
+              Responsable des opérations
+            </option>
+            <option value="redacteur_web">Rédacteur web</option>
+            <option value="realisateur">Réalisateur</option>
+            <option value="reparateur">Réparateur</option>
+            <option value="scientifique">Scientifique</option>
+            <option value="spécialiste_securite_informatique">
+              Spécialiste en sécurité informatique
+            </option>
+            <option value="traducteur">Traducteur</option>
+            <option value="veterinaire">Vétérinaire</option>
+            <option value="vendeur">Vendeur</option>
+            <option value="urbaniste">Urbaniste</option>
+            <option value="autre">Autre</option>
+          </select>
+        </div>
+        <div>
+          <label for="nationalite">Nationalité <b>*</b></label>
+          <select id="nationalite" name="nationalite">
+            <option value="allemand">Allemand(e)</option>
+            <option value="americain">Américain(e)</option>
+            <option value="argentin">Argentin(e)</option>
+            <option value="australien">Australien(e)</option>
+            <option value="belge">Belge</option>
+            <option value="bresilien">Brésilien(ne)</option>
+            <option value="canadien">Canadien(ne)</option>
+            <option value="chilien">Chilien(ne)</option>
+            <option value="chinois">Chinois(e)</option>
+            <option value="egyptien">Égyptien(ne)</option>
+            <option value="espagnol">Espagnol(e)</option>
+            <option value="francais" selected>Français(e)</option>
+            <option value="grec">Grec(que)</option>
+            <option value="italien">Italien(ne)</option>
+            <option value="japonais">Japonais(e)</option>
+            <option value="mexicain">Mexicain(e)</option>
+            <option value="norvegien">Norvégien(ne)</option>
+            <option value="polonais">Polonais(e)</option>
+            <option value="portugais">Portugais(e)</option>
+            <option value="russe">Russe</option>
+            <option value="suedois">Suédois(e)</option>
+            <option value="suisse">Suisse</option>
+            <option value="sudafricain">Sud-africain(e)</option>
+            <option value="turque">Turc(que)</option>
+            <option value="Autre">Autre</option>
+          </select>
+        </div>
+        <div>
+          <label for="datenaissance"> Date de naissance <b>*</b></label>
+          <input type="date" name="datenaissance" id="datenaissance" required />
+        </div>
+        <div>
+          <label for="paysnaissance">Pays de naissance <b>*</b></label>
+          <input type="text" name="paysnaissance" id="paysnaissance" required />
+        </div>
+        <div>
+          <label for="securitesociale">
+            Numéro de sécurité sociale <b>*</b></label
+          >
+          <input
+            type="text"
+            name="securitesociale"
+            id="securitesociale"
+            maxlength="15"
+            required
+          />
+        </div>
+        <div>
+          <label for="numero-passeport"> Numéro du passeport </label>
+          <input
+            type="text"
+            name="numero-passeport"
+            id="numero-passeport"
+            maxlength="9"
+          />
+        </div>
+        <div>
+          <label for="datedelivrancepasseport">
+            Date de délivrance du passeport</label
+          >
+          <input
+            type="date"
+            name="datedelivrancepasseport"
+            id="datedelivrancepasseport"
+          />
+        </div>
+        <div>
+          <label for="datevaliditepasseport">
+            Date de validité du passeport</label
+          >
+          <input
+            type="date"
+            name="datevaliditepasseport"
+            id="datevaliditepasseport"
+          />
+        </div>
+        <input type="submit" value="Envoyer" />
+      </form>
+    </fieldset>
+  </body>
+</html>
